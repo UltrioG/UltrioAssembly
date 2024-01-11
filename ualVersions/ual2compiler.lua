@@ -40,7 +40,6 @@ function module.compileProgram(...)
 		JLZ = 0x68,
 		JGZ = 0x6A,
 		JEZ = 0x6C,
-		JSR = 0x70,
 		BOR = 0x80,
 		XOR = 0x90,
 		ADD = 0xA0,

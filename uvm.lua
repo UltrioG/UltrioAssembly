@@ -2,7 +2,6 @@ local LATEST_UVM_VERSION = 2
 
 local params = {...}
 local filePath = params[1]
-local uvmPath = params[2]
 local vmVersion = 2
 for i, v in ipairs(params) do
 	if v == "-v" or v == "--version" then
@@ -14,5 +13,5 @@ for i, v in ipairs(params) do
 		end
 	end
 end
-local compiler = require(("uvmVersions.uvm%i"):format(vmVersion))
-compiler.compileProgram(filePath, uvmPath)
+local VM = require(("uvmVersions.uvm%i"):format(vmVersion))
+VM:execute(filePath)
