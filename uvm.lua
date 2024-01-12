@@ -1,5 +1,7 @@
 local LATEST_UVM_VERSION = 2
 
+---This script is a wrapper script that handles command arguments, such as flags, for the virtual machine.
+
 local params = {...}
 local filePath = params[1]
 local vmVersion = 2

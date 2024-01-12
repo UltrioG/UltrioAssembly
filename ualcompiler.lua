@@ -1,5 +1,7 @@
 local LATEST_UAL_VERSION = 2
 
+---This script is a wrapper script that handles command arguments, such as flags, for the compiler.
+
 local params = {...}
 local filePath = params[1]
 local umcPath = params[2]
