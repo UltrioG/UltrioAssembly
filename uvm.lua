@@ -15,5 +15,6 @@ for i, v in ipairs(params) do
 		end
 	end
 end
+print(filePath)
 local VM = require(("uvmVersions.uvm%i"):format(vmVersion))
 VM:execute(filePath)

@@ -1,5 +1,5 @@
 local module = {}
-local socket = require("socket")
+local socket = require("socketlink.lnk")
 
 function module.sleep(n)
     socket.sleep(n)
